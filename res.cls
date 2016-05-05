@@ -238,7 +238,7 @@
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
-  \hspace{2.25in}\@email
+  \hspace{2.9in}\@email
   %\begin{flushleft}\@email\end{flushleft}
   \vskip 2pt
   \fullline

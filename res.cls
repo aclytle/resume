@@ -340,7 +340,7 @@
   \everypar={}%
   \def\par{\@@par}%
   \let\\=\@normalcr
-  \addpenalty{\@secpenalty} % this would be a good place for a page break
+  %\addpenalty{\@secpenalty} % this would be a good place for a page break
 			    % \@secpenalty is what LaTeX uses before its
 			    % section's.  It happens to be -300
   \addvspace{\sectionskip}  % put in a bit of glue
@@ -758,11 +758,11 @@
      \par
        \the\tabular@head
 %     \addpenalty{-\@secpenalty}% bad place for a page break
-     \penalty -\@secpenalty % bad place for a page break
-     \penalty 10000
+     %\penalty -\@secpenalty % bad place for a page break
+     %\penalty 10000
      \ignorespaces
   }{%
-       \the\tabular@tail
+       %\the\tabular@tail
 %     \addpenalty{\@secpenalty}% good place for a page break
      \penalty \@secpenalty % good place for a page break
     \endgroup
@@ -780,11 +780,11 @@
 %    body
 % with everything in the left of its column
 
-\@secpenalty = -500
+%\@secpenalty = -500
 \topmargin 0pt
 \headheight 0pt
 \headsep 0pt
-\textheight 9in
+\textheight 10in
 \parindent 0pt
 \topmargin 0in
 \oddsidemargin 0pt
